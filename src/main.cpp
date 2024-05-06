@@ -11,8 +11,13 @@
  * by Charles Stevenson (brucesdad13@gmail.com)
  * Revision History:
  * 2024-05-05: Initial version
+ * 2024-05-06: Added delay comparable to debug print to keep timing
  */
 #include <Arduino.h>
+
+#define DEBUG 1
+#undef DEBUG // comment out to enable debugging
+#define DELAY_US 16 // delay in microseconds if not debugging
 
 void setup() {
   pinMode(PD4,OUTPUT); // MSB
@@ -28,7 +33,9 @@ void loop() {
   digitalWrite(PD3, LOW);
   digitalWrite(PD2, LOW);
 
+#ifdef DEBUG
   Serial.println("Truth table for three-bit binary odd parity generator");
+#endif
 
   // cycle through truth table for three-bit binary odd parity generator
   for (int i = 0; i < 0x8; i++) {
@@ -36,6 +43,7 @@ void loop() {
     digitalWrite(PD3, (i & 0x2) >> 1); // middle bit
     digitalWrite(PD2, (i & 0x1));      // LSB
 
+#ifdef DEBUG
     Serial.print((i & 0x4) >> 2); // MSB
     Serial.print((i & 0x2) >> 1); // middle bit
     Serial.print((i & 0x1));      // LSB
@@ -45,6 +53,9 @@ void loop() {
       Serial.println(":Odd parity");
     else
       Serial.println(":Even parity");
+#else
+    delay(DELAY_US); // delay in microseconds
+#endif
   }
 
   // pull all outputs low for 1 second; makes oscilloscope trace easier to read
