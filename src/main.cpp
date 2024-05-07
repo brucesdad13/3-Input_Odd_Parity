@@ -8,10 +8,17 @@
  * the 74LS32 quad 2-input OR gate acting as a 4-input OR gate. The
  * output of the 74LS32 is the odd parity bit which is read by the
  * NANO. Unused inputs are tied to ground.
+ *****************************************************************
+ * ATTENTION: This circuit was greatly simplified by using the XOR
+  * gate in the 74LS86 quad 2-input XOR gate. The XOR gate is the
+  * only gate needed to implement the odd parity generator. The
+  * code remains the same.
+ *****************************************************************
  * by Charles Stevenson (brucesdad13@gmail.com)
  * Revision History:
  * 2024-05-05: Initial version
  * 2024-05-06: Added delay comparable to debug print to keep timing
+ * 2024-05-07: Made note of XOR gate simplification
  */
 #include <Arduino.h>
 
