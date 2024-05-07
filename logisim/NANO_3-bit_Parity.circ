@@ -226,26 +226,78 @@
     <wire from="(580,210)" to="(590,210)"/>
     <wire from="(470,210)" to="(470,330)"/>
     <wire from="(650,200)" to="(660,200)"/>
-    <comp lib="6" loc="(471,120)" name="Text">
-      <a name="text" val="3-Input Odd Parity with available ICs and NANO V3 Driver"/>
-    </comp>
-    <comp lib="0" loc="(80,240)" name="Ground"/>
     <comp lib="7" loc="(320,180)" name="DIP_7404"/>
     <comp lib="7" loc="(450,160)" name="DIP_7410"/>
-    <comp lib="0" loc="(330,360)" name="Ground"/>
-    <comp lib="7" loc="(690,180)" name="DIP_7432"/>
+    <comp lib="0" loc="(220,190)" name="Ground"/>
     <comp lib="0" loc="(750,240)" name="Pin">
       <a name="facing" val="west"/>
       <a name="output" val="true"/>
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="0" loc="(220,190)" name="Ground"/>
+    <comp lib="0" loc="(80,240)" name="Ground"/>
+    <comp lib="7" loc="(690,180)" name="DIP_7432"/>
+    <comp lib="0" loc="(220,160)" name="Power"/>
+    <comp lib="7" loc="(580,180)" name="DIP_7404"/>
+    <comp lib="0" loc="(330,360)" name="Ground"/>
     <comp lib="10" loc="(190,130)" name="NANO"/>
     <comp lib="0" loc="(590,310)" name="Ground"/>
     <comp lib="7" loc="(450,240)" name="DIP_7410"/>
+    <comp lib="6" loc="(471,120)" name="Text">
+      <a name="text" val="3-Input Odd Parity with available ICs and NANO V3 Driver"/>
+    </comp>
+  </circuit>
+  <circuit name="main_xor">
+    <a name="circuit" val="main_xor"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="SansSerif plain 12"/>
+    <wire from="(220,180)" to="(220,190)"/>
+    <wire from="(220,160)" to="(220,170)"/>
+    <wire from="(250,150)" to="(250,160)"/>
+    <wire from="(300,140)" to="(300,150)"/>
+    <wire from="(300,170)" to="(300,180)"/>
+    <wire from="(300,150)" to="(300,170)"/>
+    <wire from="(110,130)" to="(110,210)"/>
+    <wire from="(250,120)" to="(250,140)"/>
+    <wire from="(80,200)" to="(120,200)"/>
+    <wire from="(250,180)" to="(250,210)"/>
+    <wire from="(90,230)" to="(120,230)"/>
+    <wire from="(100,120)" to="(100,220)"/>
+    <wire from="(80,200)" to="(80,240)"/>
+    <wire from="(110,130)" to="(260,130)"/>
+    <wire from="(100,120)" to="(250,120)"/>
+    <wire from="(90,110)" to="(240,110)"/>
+    <wire from="(100,220)" to="(120,220)"/>
+    <wire from="(200,170)" to="(220,170)"/>
+    <wire from="(200,180)" to="(220,180)"/>
+    <wire from="(240,170)" to="(260,170)"/>
+    <wire from="(290,170)" to="(300,170)"/>
+    <wire from="(290,140)" to="(300,140)"/>
+    <wire from="(290,180)" to="(300,180)"/>
+    <wire from="(290,150)" to="(300,150)"/>
+    <wire from="(250,180)" to="(260,180)"/>
+    <wire from="(250,150)" to="(260,150)"/>
+    <wire from="(250,160)" to="(260,160)"/>
+    <wire from="(250,140)" to="(260,140)"/>
+    <wire from="(110,210)" to="(120,210)"/>
+    <wire from="(90,110)" to="(90,230)"/>
+    <wire from="(250,210)" to="(320,210)"/>
+    <wire from="(240,110)" to="(240,170)"/>
+    <comp lib="7" loc="(290,130)" name="DIP_7486"/>
+    <comp lib="0" loc="(220,190)" name="Ground"/>
+    <comp lib="10" loc="(190,130)" name="NANO"/>
+    <comp lib="0" loc="(320,210)" name="Probe">
+      <a name="facing" val="west"/>
+      <a name="label" val="OUT"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="0" loc="(80,240)" name="Ground"/>
+    <comp lib="6" loc="(232,94)" name="Text">
+      <a name="text" val="3-Input Odd Parity with XOR and NANO V3 Driver"/>
+    </comp>
+    <comp lib="0" loc="(300,180)" name="Ground"/>
     <comp lib="0" loc="(220,160)" name="Power"/>
-    <comp lib="7" loc="(580,180)" name="DIP_7404"/>
   </circuit>
   <circuit name="3-Input Odd Parity">
     <a name="circuit" val="3-Input Odd Parity"/>
@@ -257,6 +309,8 @@
     <wire from="(380,140)" to="(380,150)"/>
     <wire from="(310,70)" to="(310,90)"/>
     <wire from="(240,160)" to="(240,180)"/>
+    <wire from="(230,90)" to="(230,110)"/>
+    <wire from="(290,70)" to="(290,100)"/>
     <wire from="(290,100)" to="(330,100)"/>
     <wire from="(280,130)" to="(320,130)"/>
     <wire from="(230,190)" to="(330,190)"/>
@@ -264,6 +318,7 @@
     <wire from="(310,140)" to="(330,140)"/>
     <wire from="(360,110)" to="(380,110)"/>
     <wire from="(360,150)" to="(380,150)"/>
+    <wire from="(210,70)" to="(210,110)"/>
     <wire from="(320,80)" to="(320,120)"/>
     <wire from="(390,70)" to="(390,110)"/>
     <wire from="(390,150)" to="(390,190)"/>
@@ -271,51 +326,60 @@
     <wire from="(320,120)" to="(330,120)"/>
     <wire from="(390,110)" to="(400,110)"/>
     <wire from="(390,150)" to="(400,150)"/>
+    <wire from="(310,90)" to="(310,140)"/>
     <wire from="(150,60)" to="(220,60)"/>
+    <wire from="(220,70)" to="(220,200)"/>
     <wire from="(150,70)" to="(210,70)"/>
     <wire from="(150,80)" to="(200,80)"/>
     <wire from="(380,110)" to="(380,120)"/>
     <wire from="(220,60)" to="(330,60)"/>
+    <wire from="(220,200)" to="(330,200)"/>
     <wire from="(230,110)" to="(230,190)"/>
     <wire from="(200,80)" to="(200,160)"/>
+    <wire from="(200,160)" to="(240,160)"/>
     <wire from="(290,150)" to="(330,150)"/>
     <wire from="(240,130)" to="(240,160)"/>
+    <wire from="(220,70)" to="(250,70)"/>
     <wire from="(100,90)" to="(130,90)"/>
     <wire from="(240,180)" to="(330,180)"/>
+    <wire from="(240,160)" to="(330,160)"/>
+    <wire from="(280,90)" to="(310,90)"/>
     <wire from="(360,70)" to="(390,70)"/>
     <wire from="(360,190)" to="(390,190)"/>
     <wire from="(310,70)" to="(330,70)"/>
     <wire from="(380,140)" to="(400,140)"/>
-    <wire from="(450,130)" to="(470,130)"/>
-    <wire from="(240,130)" to="(250,130)"/>
-    <wire from="(290,100)" to="(290,150)"/>
-    <wire from="(230,90)" to="(230,110)"/>
-    <wire from="(290,70)" to="(290,100)"/>
-    <wire from="(210,70)" to="(210,110)"/>
-    <wire from="(310,90)" to="(310,140)"/>
-    <wire from="(220,70)" to="(220,200)"/>
-    <wire from="(220,200)" to="(330,200)"/>
-    <wire from="(200,160)" to="(240,160)"/>
-    <wire from="(220,70)" to="(250,70)"/>
-    <wire from="(240,160)" to="(330,160)"/>
-    <wire from="(280,90)" to="(310,90)"/>
     <wire from="(380,120)" to="(400,120)"/>
+    <wire from="(450,130)" to="(470,130)"/>
     <wire from="(230,90)" to="(250,90)"/>
     <wire from="(210,110)" to="(230,110)"/>
     <wire from="(280,70)" to="(290,70)"/>
-    <comp lib="1" loc="(280,90)" name="NOT Gate"/>
-    <comp lib="1" loc="(360,110)" name="AND Gate">
+    <wire from="(240,130)" to="(250,130)"/>
+    <wire from="(290,100)" to="(290,150)"/>
+    <comp lib="0" loc="(130,90)" name="Splitter">
+      <a name="fanout" val="3"/>
+      <a name="incoming" val="3"/>
+      <a name="bit0" val="2"/>
+      <a name="bit2" val="0"/>
+    </comp>
+    <comp lib="0" loc="(470,130)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="tristate" val="false"/>
+      <a name="labelloc" val="east"/>
+    </comp>
+    <comp lib="1" loc="(360,150)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="1" loc="(280,70)" name="NOT Gate"/>
     <comp lib="1" loc="(280,130)" name="NOT Gate"/>
-    <comp lib="1" loc="(450,130)" name="OR Gate">
-      <a name="inputs" val="4"/>
-    </comp>
+    <comp lib="1" loc="(280,90)" name="NOT Gate"/>
     <comp lib="0" loc="(100,90)" name="Pin">
       <a name="width" val="3"/>
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(360,110)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
     </comp>
     <comp lib="6" loc="(153,44)" name="Text">
       <a name="text" val="3-Input Odd Parity pure logic"/>
@@ -328,21 +392,9 @@
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="0" loc="(470,130)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="tristate" val="false"/>
-      <a name="labelloc" val="east"/>
-    </comp>
-    <comp lib="1" loc="(360,150)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="0" loc="(130,90)" name="Splitter">
-      <a name="fanout" val="3"/>
-      <a name="incoming" val="3"/>
-      <a name="bit0" val="2"/>
-      <a name="bit2" val="0"/>
+    <comp lib="1" loc="(280,70)" name="NOT Gate"/>
+    <comp lib="1" loc="(450,130)" name="OR Gate">
+      <a name="inputs" val="4"/>
     </comp>
   </circuit>
   <circuit name="3-Input Odd Parity Suboptimal">
@@ -474,13 +526,15 @@
     <wire from="(270,240)" to="(350,240)"/>
     <wire from="(320,410)" to="(400,410)"/>
     <wire from="(580,350)" to="(660,350)"/>
-    <comp lib="0" loc="(520,430)" name="Ground"/>
+    <comp lib="0" loc="(150,230)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="0" loc="(150,270)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp lib="0" loc="(260,440)" name="Ground"/>
-    <comp lib="7" loc="(380,240)" name="DIP_7410"/>
-    <comp lib="7" loc="(380,320)" name="DIP_7410"/>
+    <comp lib="0" loc="(150,250)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
     <comp lib="7" loc="(250,260)" name="DIP_7404"/>
     <comp lib="6" loc="(238,203)" name="Text">
       <a name="text" val="3-Input Odd Parity with available ICs"/>
@@ -491,14 +545,12 @@
       <a name="tristate" val="false"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="7" loc="(630,260)" name="DIP_7432"/>
+    <comp lib="7" loc="(380,320)" name="DIP_7410"/>
     <comp lib="7" loc="(510,260)" name="DIP_7404"/>
-    <comp lib="0" loc="(150,250)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(150,230)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
+    <comp lib="0" loc="(520,430)" name="Ground"/>
+    <comp lib="7" loc="(630,260)" name="DIP_7432"/>
+    <comp lib="0" loc="(260,440)" name="Ground"/>
+    <comp lib="7" loc="(380,240)" name="DIP_7410"/>
   </circuit>
   <circuit name="3-Input Odd Parity Generated">
     <a name="circuit" val="3-Input Odd Parity Generated"/>
@@ -562,7 +614,18 @@
     <wire from="(60,90)" to="(60,150)"/>
     <wire from="(80,110)" to="(80,170)"/>
     <wire from="(100,70)" to="(100,130)"/>
-    <comp lib="1" loc="(140,50)" name="NOT Gate">
+    <comp lib="1" loc="(140,130)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="0" loc="(40,130)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="c"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(140,20)" name="NOT Gate">
+      <a name="size" val="20"/>
+    </comp>
+    <comp lib="1" loc="(140,200)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
     <comp lib="0" loc="(310,140)" name="Pin">
@@ -571,54 +634,43 @@
       <a name="label" val="x"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(210,170)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
+    <comp lib="0" loc="(40,30)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="a"/>
+      <a name="labelloc" val="north"/>
     </comp>
     <comp lib="0" loc="(40,80)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="b"/>
       <a name="labelloc" val="north"/>
     </comp>
+    <comp lib="1" loc="(210,50)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
     <comp lib="1" loc="(290,140)" name="OR Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="4"/>
     </comp>
-    <comp lib="1" loc="(210,240)" name="AND Gate">
+    <comp lib="1" loc="(210,110)" name="AND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
     <comp lib="1" loc="(140,170)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="0" loc="(40,30)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="a"/>
-      <a name="labelloc" val="north"/>
+    <comp lib="1" loc="(210,170)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
+    </comp>
+    <comp lib="1" loc="(210,240)" name="AND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="3"/>
     </comp>
     <comp lib="1" loc="(140,90)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
-    <comp lib="1" loc="(140,130)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(210,110)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="0" loc="(40,130)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="c"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(210,50)" name="AND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(140,200)" name="NOT Gate">
-      <a name="size" val="20"/>
-    </comp>
-    <comp lib="1" loc="(140,20)" name="NOT Gate">
+    <comp lib="1" loc="(140,50)" name="NOT Gate">
       <a name="size" val="20"/>
     </comp>
   </circuit>
@@ -697,11 +749,17 @@
     <wire from="(160,200)" to="(180,200)"/>
     <wire from="(240,260)" to="(260,260)"/>
     <wire from="(100,110)" to="(180,110)"/>
-    <comp lib="1" loc="(240,170)" name="NAND Gate">
+    <comp lib="0" loc="(350,210)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="label" val="x"/>
+      <a name="labelloc" val="north"/>
+    </comp>
+    <comp lib="1" loc="(240,360)" name="NAND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="1" loc="(160,140)" name="NAND Gate">
+    <comp lib="1" loc="(160,260)" name="NAND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
@@ -710,36 +768,22 @@
       <a name="label" val="c"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="1" loc="(240,260)" name="NAND Gate">
+    <comp lib="1" loc="(240,170)" name="NAND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
     </comp>
-    <comp lib="1" loc="(160,260)" name="NAND Gate">
+    <comp lib="1" loc="(240,260)" name="NAND Gate">
       <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
+      <a name="inputs" val="3"/>
     </comp>
     <comp lib="0" loc="(40,30)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="a"/>
       <a name="labelloc" val="north"/>
     </comp>
-    <comp lib="0" loc="(350,210)" name="Pin">
-      <a name="facing" val="west"/>
-      <a name="output" val="true"/>
-      <a name="label" val="x"/>
-      <a name="labelloc" val="north"/>
-    </comp>
-    <comp lib="1" loc="(160,200)" name="NAND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
-    </comp>
     <comp lib="1" loc="(240,80)" name="NAND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="3"/>
-    </comp>
-    <comp lib="1" loc="(160,310)" name="NAND Gate">
-      <a name="size" val="30"/>
-      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(40,80)" name="Pin">
       <a name="tristate" val="false"/>
@@ -750,9 +794,13 @@
       <a name="size" val="30"/>
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(240,360)" name="NAND Gate">
+    <comp lib="1" loc="(160,200)" name="NAND Gate">
       <a name="size" val="30"/>
-      <a name="inputs" val="3"/>
+      <a name="inputs" val="2"/>
+    </comp>
+    <comp lib="1" loc="(160,310)" name="NAND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(160,80)" name="NAND Gate">
       <a name="size" val="30"/>
@@ -761,6 +809,10 @@
     <comp lib="1" loc="(330,210)" name="NAND Gate">
       <a name="size" val="30"/>
       <a name="inputs" val="4"/>
+    </comp>
+    <comp lib="1" loc="(160,140)" name="NAND Gate">
+      <a name="size" val="30"/>
+      <a name="inputs" val="2"/>
     </comp>
   </circuit>
   <circuit name="3-input Odd Parity XOR">
@@ -791,16 +843,16 @@
       <a name="label" val="IN1"/>
     </comp>
     <comp lib="7" loc="(340,260)" name="DIP_7486"/>
-    <comp lib="0" loc="(280,280)" name="Pin">
-      <a name="tristate" val="false"/>
-      <a name="label" val="IN2"/>
-    </comp>
-    <comp lib="0" loc="(350,310)" name="Ground"/>
     <comp lib="0" loc="(370,340)" name="Probe">
       <a name="facing" val="west"/>
       <a name="label" val="OUT"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(280,280)" name="Pin">
+      <a name="tristate" val="false"/>
+      <a name="label" val="IN2"/>
+    </comp>
+    <comp lib="0" loc="(350,310)" name="Ground"/>
     <comp lib="0" loc="(280,260)" name="Pin">
       <a name="tristate" val="false"/>
       <a name="label" val="IN3"/>
