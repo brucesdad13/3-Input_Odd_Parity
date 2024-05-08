@@ -2,9 +2,21 @@
 
 This repository contains the Arduino code and schematic for a three-bit binary odd parity generator. The project utilizes TTL logic gates including two 74LS04 hex inverters, two 74LS10 triple 3-input NAND gates, and a 74LS32 quad 2-input OR gate to construct the parity generator.
 
+## Circuit Simplification Update
+
+I've greatly simplified the original design of the three-bit binary odd parity generator by incorporating a single 74LS86 quad 2-input XOR gate. The XOR gate is the
+only gate needed to implement the odd parity generator. The code remains the same. This change streamlines the circuit and reduces the required components, making the 
+setup more efficient and easier to manage.
+
+### Changes Made:
+- **Single XOR IC**: Multiple logic gates were replaced with one 74LS86 quad 2-input XOR IC, which is capable of handling all necessary logic operations for generating the parity bit.
+- **Reduced Complexity**: The new configuration minimizes the wiring and complexity, enhancing the circuit's reliability and ease of troubleshooting.
+
+This update reflects a significant improvement in the circuit design, demonstrating a more integrated and concise approach to achieving the same functionality.
+
 ## Description
 
-The Arduino Nano drives the circuit by setting inputs for all permutations of the 3-bit binary odd parity function. The final output from the 74LS32 represents the odd parity bit, which the Nano reads back. This circuit was created with parts on-hand for educational purposes and does not represent an optimal design.
+The Arduino Nano drives the circuit by setting inputs for all permutations of the 3-bit binary odd parity function. This circuit was created with parts on hand for educational purposes and does not represent an optimal design.
 
 ## Features
 
@@ -37,6 +49,11 @@ The Arduino Nano drives the circuit by setting inputs for all permutations of th
 Once the Arduino is programmed and the circuit is powered up, the Arduino will begin cycling through input permutations and display the resulting parity bit on the serial monitor. This allows for real-time tracking and troubleshooting of the parity generation process.
 
 ## Images
+
+![LogiSim sketch of the 3-bit odd parity circuit](https://github.com/brucesdad13/3-Input_Odd_Parity/blob/main/images/LogiSimXOR.png)
+![Breadboard wiring example for a Nano v3 driven 3-bit odd parity circuit using TTL logic devices](https://github.com/brucesdad13/3-Input_Odd_Parity/blob/main/images/BreadboardXOR.jpg)
+
+First version:
 
 ![LogiSim sketch of the 3-bit odd parity circuit](https://github.com/brucesdad13/3-Input_Odd_Parity/blob/main/images/LogiSim.png)
 ![Breadboard wiring example for a Nano v3 driven 3-bit odd parity circuit using TTL logic devices](https://github.com/brucesdad13/3-Input_Odd_Parity/blob/main/images/Breadboard.jpg)
