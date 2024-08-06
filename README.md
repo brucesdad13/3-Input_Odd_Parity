@@ -69,4 +69,4 @@ This project is released under the MIT License. See the `LICENSE` file for more 
 
 ## Contact
 
-For any queries regarding this project, please contact Charles Stevenson (brucesdad13@gmail.com)
+For any queries regarding this project, please contact Charles Stevenson (brucesdad13)
